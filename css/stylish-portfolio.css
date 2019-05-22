@@ -155,27 +155,45 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    /* background: url(../img/bg.jpg) no-repeat center center scroll; */
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* background-size: cover; */
+    /* -o-background-size: cover; */
+}
+
+.header {
+  z-index: -10;
+}
+
+/* About */
+
+.about-header {
+    display: table;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: 20%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-/* About */
-
 .about {
     padding: 50px 0;
 }
 
-/* Services */
+/* Skills */
 
-.services {
+.skills {
     padding: 50px 0;
+    background: url(../img/matrix\ copy.jpg) no-repeat center center scroll;
 }
 
-.service-item {
+.skills-item {
     margin-bottom: 30px;
+    color: black;
 }
 
 /* Callout */
@@ -210,34 +228,17 @@ hr.small {
     opacity: 0.8;
 }
 
-/* Call to Action */
+/* Contact */
 
-.call-to-action {
+.contact {
     padding: 50px 0;
 }
 
-.call-to-action .btn {
+.contact .btn {
     margin: 10px;
 }
 
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
-.map iframe {
-    pointer-events: none;
-}
-
 /* Footer */
-
 footer {
     padding: 100px 0;
 }
@@ -346,4 +347,98 @@ footer {
   filter: alpha(opacity=0);
   color: rgba(0,0,0, 0.5);
   text-transform: uppercase;
+}
+
+/* Carousel */
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  bottom: 8px;
+  color: #f2f2f2;
+  display: table-cell;
+  font-size: auto;
+  height: auto;
+  padding: 8px 12px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.img {
+  max-width: 100%;
+  /* max-height: 528px; */
 }

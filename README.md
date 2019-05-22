@@ -4,7 +4,7 @@
 
 Access Portfolio by going to [choekr.github.io](http://choekr.github.io/)
 
-If any questions or need to contact creator, please email: choeku86@gmail.com
+If any questions or need to contact creator, please email: choek@oregonstate.edu
 
 ## Template Used
 

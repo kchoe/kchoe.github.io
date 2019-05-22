@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,65 +20,86 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Back to top</a>
+                <a href="#top">Back to top</a>
             </li>
             <li>
-                <!-- <a href="#about" onclick=$("#menu-close").click();>About</a> -->
-                <a href="./about.html" onclick=$("#menu-close").click();>About</a>
+                <a href="./index.html">Home</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Skills</a>
+                <a href="./html/about.html">About</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Projects</a>
+                <a href="./html/skills.html">Skills</a>
             </li>
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                <a href="./html/portfolio.html">Projects</a>
+            </li>
+            <li>
+                <a href="./html/message.html">Message</a>
             </li>
         </ul>
     </nav>
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <!-- <video src='./img/bg.mov' autoplay></video> -->
-            <h1>Welcome</h1>
-            <h3>Kukrim Choe</h3>
-            <h3>Software developer</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+    <!-- Carousel container -->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img class="img" src="./img/bg1.jpg">
+            <div class="text text-vertical-center">
+                    <h1>Welcome</h1>
+                    <h3>Kukrim Choe</h3>
+                    <h3>Software developer</h3>
+            </div>
         </div>
-    </header>
-
+    
+        <div class="mySlides">
+            <img class="img" src="img/bg2.jpg">
+            <div class="text text-vertical-center">
+                    <h1>Welcome</h1>
+                    <h3>Kukrim Choe</h3>
+                    <h3>Software developer</h3>
+            </div>
+        </div>
+    
+        <div class="mySlides">
+            <img class="img" src="img/bg3.jpg">
+            <div class="text text-vertical-center">
+                    <h1>Welcome</h1>
+                    <h3>Kukrim Choe</h3>
+                    <h3>Software developer</h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
     <!-- About -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Software Developer. Scientist. Life-long learner. Passion for technology. </h2>
-                    <p class="lead">Thank you for visiting my portfolio. I am software/web developer currently looking for new opportunities.</p>
-                    <p class="lead">I recently graduated from Coding Dojo, an intensive coding bootcamp in Bellevue, WA. I am capable of using three different stacks for web development, including Python, MEAN, and ASP.NET Core with C#.</p>
-                    <p class="lead">If you have a project ideas or technologies you would like to share, please do not hesitate to <a href="#mailto:choeku86@gmail.com">contact me</a>!</p>
-                    <a href="#résuméModal" data-toggle="modal" class="">
-                        <button class="btn">Résumé</button>
-                    </a>
+                    <h2>Welcome to my portfolio website</h2>
+                    <br>
+                    <h2>Software Developer, Scientist, Life-long learner</h2>
                 </div>
             </div>
             <!-- /.row -->
@@ -87,247 +107,21 @@
         <!-- /.container -->
     </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Skills</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <img src='./img/mean.jpg' class="fa fa-stack-1x"><img>
-                            </span>
-                                <h4>
-                                    <strong>MEAN</strong>
-                                </h4>
-                                <p>
-                                    JavaScript
-                                    <br>ES6
-                                    <br>MongoDB
-                                    <br>ExpressJS
-                                    <br>AngularJS
-                                    <br>NodeJS
-                                </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <img src='./img/python.jpg' class="fa fa-stack-1x"><img>
-                            </span>
-                                <h4>
-                                    <strong>Python</strong>
-                                </h4>
-                                <p>
-                                    Python
-                                    <br>Flask
-                                    <br>Django
-                                </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <img src='./img/cSharp.jpg' class="fa fa-stack-1x"><img>
-                            </span>
-                                <h4>
-                                    <strong>C#</strong>
-                                </h4>
-                                <p>
-                                    C#
-                                    <br>NancyFX
-                                    <br>ASP.NET Core
-                                    <br>Dapper
-                                    <br>Entity Framework
-                                </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <img src='./img/misc.jpg' class="fa fa-stack-1x"><img>
-                            </span>
-                                <h4>
-                                    <strong>Other</strong>
-                                </h4>
-                                <p>
-                                    HTML
-                                    <br>CSS
-                                    <br>MySQL
-                                    <br>MAMP
-                                    <br>MongoChef
-                                    <br>MySQL Workbench
-                                    <br>Photoshop
-                                    <br>Visual Studio Code
-                                    <br>Sublime
-                                    <br>Atom
-                                    <br>Phaser
-                                </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <!-- <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Science</strong>
-                                </h4>
-                                <p>University of Washington (Seattle, WA)</p>
-                                <p>Biochemistry(B.S.)</p>
-                                <p>Chemistry(B.A.)</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div> -->
-
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Projects</h1>
-        </div>
-    </aside>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <!-- <h2>Our Work</h2> -->
-                    <!-- <hr class="small"> -->
-                    <div class="row">
-                      <!-- Portfolio #1 - Q&A -->
-                        <div class="col-md-6">
-                            <div class="portfolio-item hovereffect">
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="img/Q&A.jpg">
-                                    <div class='overlay'>
-                                      <h2>Q&A - MEAN</h2>
-                                      <p>Simple Q&A website<br>
-                                      Ask, Answer, Like!</p>
-                                      <a class='info' href="https://github.com/choekr/Q_and_A">View project</a>
-                                    </div>
-                                <!-- </a> -->
-                            </div>
-                        </div>
-
-                      <!-- Portfolio #2 - Bid Now -->
-                        <div class="col-md-6">
-                            <div class="portfolio-item hovereffect">
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                    <div class='overlay'>
-                                      <h2>Bid NOW - MEAN</h2>
-                                      <p>Simple Bidding website<br>
-                                      Bid and Win!</p>
-                                      <a class='info' href="https://github.com/choekr/BidNow">View project</a>
-                                    </div>
-                                <!-- </a> -->
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <div class="portfolio-item hovereffect">
-
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                    <div class='overlay'>
-                                      <h2>DojoDachi - C#/ASP.NET Core</h2>
-                                      <p>Feed your virtual pet<br>
-                                      and Love them!</p>
-                                      <a class='info' href="https://github.com/choekr/CodingDojo/tree/master/3_CSharp_Stack/ASP.NET.Core/dojodachi">View project</a>
-                                    </div>
-                                <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <div class="portfolio-item hovereffect">
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                    <div class='overlay'>
-                                      <h2>Ninja Gold - Django</h2>
-                                      <p>Make Gold and have fun!</p>
-                                      <a class='info' href="https://github.com/choekr/CodingDojo/tree/master/2_Python_Stack/Django/ninja_gold_django">View project</a>
-                                    </div>
-                                <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <div class="portfolio-item hovereffect">
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                    <div class='overlay'>
-                                      <h2>More Projects Coming Soon</h2>
-                                      <!-- <p>DESCRIPTION GOES HERE</p>
-                                      <a class='info' href="#">View project</a> -->
-                                    </div>
-                                <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Call to Action -->
-    <aside id="contact" class="call-to-action bg-primary">
+    <!-- Contact -->
+    <aside id="contact" class="contact bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-<!--                     <h3>Contact</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
-                    <h4><strong>Contact</strong></h4>
                     <h3> Kukrim Choe </h3>
                     <ul class="list-unstyled">
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="mailto:choeku86@gmail.com"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
+                            <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
                         </li>
                         <li>
                             <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/KukrimC"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
@@ -337,7 +131,7 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <hr class="small">
                     <p> Seattle, WA 98115 </p>
-                    <p class="text-muted">Copyright &copy; Kukrim Choe 2017</p>
+                    <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
                 </div>
 
                 </div>
@@ -345,34 +139,6 @@
         </div>
     </aside>
 
-    <!-- Map -->
-<!--     <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-    </section> -->
-
-    <!-- Footer -->
-<!--     <footer style="padding-bottom: 0px, padding-top: 0px">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <hr class="small">
-                    <p> Seattle, WA 98115 </p>
-                    <p class="text-muted">Copyright &copy; Kukrim Choe 2017</p>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
- -->
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -407,7 +173,6 @@
         if ($(this).scrollTop() > 250) {
             if (!fixed) {
                 fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
                 $('#to-top').show("slow", function() {
                     $('#to-top').css({
                         position: 'fixed',
@@ -426,50 +191,10 @@
             }
         }
     });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
     </script>
 
-    <!-- Résumé Modal -->
-    <div class="portfolio-modal modal fade" id="résuméModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                              <script src="https://gist.github.com/choekr/f12a0c01b90bc424b16fdd1bf2e25433.js"></script>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Carousel Effect JavaScript -->
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
