@@ -1,200 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Kukrim Choe's Portfolio</title>
+        <title>Kukrim Choe's Portfolio</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-</head>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-<body>
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top">Back to top</a>
-            </li>
-            <li>
-                <a href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href="./html/about.html">About</a>
-            </li>
-            <li>
-                <a href="./html/skills.html">Skills</a>
-            </li>
-            <li>
-                <a href="./html/portfolio.html">Projects</a>
-            </li>
-            <li>
-                <a href="./html/message.html">Message</a>
-            </li>
-        </ul>
-    </nav>
+        <!-- Misc JavaScript for pages -->
+        <script src="js/theme.js"></script>
+    </head>
 
-    <!-- Carousel container -->
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <img class="img" src="./img/bg1.jpg">
-            <div class="text text-vertical-center">
-                    <h1>Welcome</h1>
-                    <h3>Kukrim Choe</h3>
-                    <h3>Software developer</h3>
-            </div>
-        </div>
-    
-        <div class="mySlides">
-            <img class="img" src="img/bg2.jpg">
-            <div class="text text-vertical-center">
-                    <h1>Welcome</h1>
-                    <h3>Kukrim Choe</h3>
-                    <h3>Software developer</h3>
-            </div>
-        </div>
-    
-        <div class="mySlides">
-            <img class="img" src="img/bg3.jpg">
-            <div class="text text-vertical-center">
-                    <h1>Welcome</h1>
-                    <h3>Kukrim Choe</h3>
-                    <h3>Software developer</h3>
-            </div>
-        </div>
-    </div>
-    <br>
-    
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Welcome to my portfolio website</h2>
-                    <br>
-                    <h2>Software Developer, Scientist, Life-long learner</h2>
+    <body>
+        <!-- Navigation -->
+        <a id="menu-toggle" onclick="menuOpen()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" onclick="menuClose()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./html/about.html">About</a>
+                </li>
+                <li>
+                    <a href="./html/skills.html">Skills</a>
+                </li>
+                <li>
+                    <a href="./html/portfolio.html">Projects</a>
+                </li>
+                <li>
+                    <a href="./html/message.html">Message</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Carousel container -->
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img class="img" src="./img/bg1.jpg">
+                <div class="text text-vertical-center">
+                        <h1>Welcome</h1>
+                        <h3>Kukrim Choe</h3>
+                        <h3>Software developer</h3>
                 </div>
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Contact -->
-    <aside id="contact" class="contact bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3> Kukrim Choe </h3>
-                    <ul class="list-unstyled">
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <hr class="small">
-                    <p> Seattle, WA 98115 </p>
-                    <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
+        
+            <div class="mySlides">
+                <img class="img" src="img/bg2.jpg">
+                <div class="text text-vertical-center">
+                        <h1>Welcome</h1>
+                        <h3>Kukrim Choe</h3>
+                        <h3>Software developer</h3>
                 </div>
-
+            </div>
+        
+            <div class="mySlides">
+                <img class="img" src="img/bg3.jpg">
+                <div class="text text-vertical-center">
+                        <h1>Welcome</h1>
+                        <h3>Kukrim Choe</h3>
+                        <h3>Software developer</h3>
                 </div>
             </div>
         </div>
-    </aside>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center text-box">
+                        <h2>Welcome to my portfolio website</h2>
+                        <br>
+                        <h2>Software Developer, Scientist, Life-long learner</h2>
+                        <br>
+                        <h2>This portfolio website has been created as part of OSU's CS290 project</h2>
+                        <br>
+                        <h2>If you would like to contact me </h2> 
+                        <h2>Please use one of the links on the bottom of the screen</h2>
+                        <br>
+                        <h2>However, my LinkedIn profile may not be visible to you</h2>
+                        <h2>It has been blocked to public due to high volume of spam messages</h2>
+                        <br>
+                        <h2>Thank you for visiting</h2>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
 
+        <!-- Contact -->
+        <aside id="contact" class="contact bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3> Kukrim Choe </h3>
+                        <ul class="list-unstyled">
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                            </li>
+                        </ul>
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    </script>
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <hr class="small">
+                        <p> Seattle, WA 98115 </p>
+                        <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
+                    </div>
 
-    <!-- Carousel Effect JavaScript -->
-    <script src="js/carousel.js"></script>
-</body>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Carousel Effect JavaScript -->
+        <script src="js/carousel.js"></script>
+    </body>
 
 </html>

@@ -1,245 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Kukrim Choe's Portfolio</title>
+        <title>Kukrim Choe's Portfolio</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="../css/stylish-portfolio.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../css/stylish-portfolio.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-</head>
+        <!-- Custom Fonts -->
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-<body>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top">Back to top</a>
-            </li>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="./about.html">About</a>
-            </li>
-            <li>
-                <a href="./skills.html">Skills</a>
-            </li>
-            <li>
-                <a href="./portfolio.html">Projects</a>
-            </li>
-            <li>
-                <a href="./message.html">Message</a>
-            </li>
-        </ul>
-    </nav>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Projects</h1>
-        </div>
-    </aside>
-    
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <div class="row">
-                        <!-- Portfolio #1 - Q&A -->
-                        <div class="col-md-6">
-                            <div class="portfolio-item hovereffect">
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="../img/Q&A.jpg">
-                                    <div class='overlay'>
-                                        <h2>Q&A - MEAN</h2>
-                                        <p>Simple Q&A website<br>
-                                        Ask, Answer, Like!</p>
-                                        <a class='info' href="https://github.com/choekr/Q_and_A">View project</a>
-                                    </div>
-                                <!-- </a> -->
-                            </div>
-                        </div>
+        <!-- Misc JavaScript for pages -->
+        <script src="../js/theme.js"></script>
+    </head>
 
-                        <!-- Portfolio #2 - Bid Now -->
-                        <div class="col-md-6">
-                            <div class="portfolio-item hovereffect">
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="../img/portfolio-1.jpg">
-                                    <div class='overlay'>
-                                        <h2>Bid NOW - MEAN</h2>
-                                        <p>Simple Bidding website<br>
-                                        Bid and Win!</p>
-                                        <a class='info' href="https://github.com/choekr/BidNow">View project</a>
-                                    </div>
-                                <!-- </a> -->
-                            </div>
-                        </div>
+    <body>
 
-                        <!-- Portfolio #3 -->
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
+        <!-- Navigation -->
+        <a id="menu-toggle" onclick="menuOpen()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" onclick="menuClose()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./skills.html">Skills</a>
+                </li>
+                <li>
+                    <a href="./portfolio.html">Projects</a>
+                </li>
+                <li>
+                    <a href="./message.html">Message</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Callout -->
+        <aside class="callout">
+            <div class="text-vertical-center">
+                <h1>Projects</h1>
+            </div>
+        </aside>
+        
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <div class="row">
+                            <!-- Portfolio #1 - Q&A -->
+                            <div class="col-md-6">
                                 <div class="portfolio-item hovereffect">
+                                    <!-- <a href="#"> -->
+                                        <img class="img-portfolio img-responsive" src="../img/Q&A.jpg">
+                                        <div class='overlay'>
+                                            <h2>Q&A - MEAN</h2>
+                                            <p>Simple Q&A website<br>
+                                            Ask, Answer, Like!</p>
+                                            <a class='info' href="https://github.com/choekr/Q_and_A">View project</a>
+                                        </div>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
 
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="../img/portfolio-2.jpg">
-                                    <div class='overlay'>
-                                        <h2>DojoDachi - C#/ASP.NET Core</h2>
-                                        <p>Feed your virtual pet<br>
-                                        and Love them!</p>
-                                        <a class='info' href="https://github.com/choekr/CodingDojo/tree/master/3_CSharp_Stack/ASP.NET.Core/dojodachi">View project</a>
+                            <!-- Portfolio #2 - Bid Now -->
+                            <div class="col-md-6">
+                                <div class="portfolio-item hovereffect">
+                                    <!-- <a href="#"> -->
+                                        <img class="img-portfolio img-responsive" src="../img/portfolio-1.jpg">
+                                        <div class='overlay'>
+                                            <h2>Bid NOW - MEAN</h2>
+                                            <p>Simple Bidding website<br>
+                                            Bid and Win!</p>
+                                            <a class='info' href="https://github.com/choekr/BidNow">View project</a>
+                                        </div>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
+
+                            <!-- Portfolio #3 -->
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item hovereffect">
+
+                                    <!-- <a href="#"> -->
+                                        <img class="img-portfolio img-responsive" src="../img/portfolio-2.jpg">
+                                        <div class='overlay'>
+                                            <h2>DojoDachi - C#/ASP.NET Core</h2>
+                                            <p>Feed your virtual pet<br>
+                                            and Love them!</p>
+                                            <a class='info' href="https://github.com/choekr/CodingDojo/tree/master/3_CSharp_Stack/ASP.NET.Core/dojodachi">View project</a>
+                                        </div>
+                                    <!-- </a> -->
                                     </div>
-                                <!-- </a> -->
+                                </div>
+                            </div>
+
+                            <!-- Portfolio #4 -->
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item hovereffect">
+                                    <!-- <a href="#"> -->
+                                        <img class="img-portfolio img-responsive" src="../img/portfolio-3.jpg">
+                                        <div class='overlay'>
+                                            <h2>Ninja Gold - Django</h2>
+                                            <p>Make Gold and have fun!</p>
+                                            <a class='info' href="https://github.com/choekr/CodingDojo/tree/master/2_Python_Stack/Django/ninja_gold_django">View project</a>
+                                        </div>
+                                    <!-- </a> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio #5 -->
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item hovereffect">
+                                    <!-- <a href="#"> -->
+                                        <img class="img-portfolio img-responsive" src="../img/portfolio-4.jpg">
+                                        <div class='overlay'>
+                                            <h2>More Projects Coming Soon</h2>
+                                        </div>
+                                    <!-- </a> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Portfolio #4 -->
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <div class="portfolio-item hovereffect">
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="../img/portfolio-3.jpg">
-                                    <div class='overlay'>
-                                        <h2>Ninja Gold - Django</h2>
-                                        <p>Make Gold and have fun!</p>
-                                        <a class='info' href="https://github.com/choekr/CodingDojo/tree/master/2_Python_Stack/Django/ninja_gold_django">View project</a>
-                                    </div>
-                                <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Portfolio #5 -->
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <div class="portfolio-item hovereffect">
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive" src="../img/portfolio-4.jpg">
-                                    <div class='overlay'>
-                                        <h2>More Projects Coming Soon</h2>
-                                    </div>
-                                <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
+                        <!-- /.row (nested) -->
                     </div>
-                    <!-- /.row (nested) -->
+                    <!-- /.col-lg-10 -->
                 </div>
-                <!-- /.col-lg-10 -->
+                <!-- /.row -->
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+            <!-- /.container -->
+        </section>
 
-    <!-- Contact -->
-    <aside id="contact" class="contact bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3> Kukrim Choe </h3>
-                    <ul class="list-unstyled">
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
+        <!-- Contact -->
+        <aside id="contact" class="contact bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3> Kukrim Choe </h3>
+                        <ul class="list-unstyled">
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                            </li>
+                        </ul>
 
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <hr class="small">
-                    <p> Seattle, WA 98115 </p>
-                    <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
-                </div>
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <hr class="small">
+                        <p> Seattle, WA 98115 </p>
+                        <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
+                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </aside>
-
-    <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Scrolls to the selected menu item on the page
-        $(function() {
-            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-        //#to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function() {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function() {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function() {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
-        });
-    </script>
-</body>
+        </aside>
+    </body>
 
 </html>

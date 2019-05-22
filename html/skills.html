@@ -1,266 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Kukrim Choe's Portfolio</title>
+        <title>Kukrim Choe's Portfolio</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="../css/stylish-portfolio.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../css/stylish-portfolio.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-</head>
+        <!-- Custom Fonts -->
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-<body>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top">Back to top</a>
-            </li>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <!-- <a href="#about">About</a> -->
-                <a href="./about.html">About</a>
-            </li>
-            <li>
-                <a href="./skills.html">Skills</a>
-            </li>
-            <li>
-                <a href="./portfolio.html">Projects</a>
-            </li>
-            <li>
-                <a href="./message.html">Message</a>
-            </li>
-        </ul>
-    </nav>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- Skills -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <!-- Background image source: https://pixabay.com/illustrations/matrix-code-data-networking-1735640/ -->
-    <section id="skills" class="skills bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="text-vertical-center">
-                        <h1>Skills</h1>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="skills-item">
-                                <span class="fa-stack fa-4x">
+        <!-- Misc JavaScript for pages -->
+        <script src="../js/theme.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <a id="menu-toggle" onclick="menuOpen()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" onclick="menuClose()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./skills.html">Skills</a>
+                </li>
+                <li>
+                    <a href="./portfolio.html">Projects</a>
+                </li>
+                <li>
+                    <a href="./message.html">Message</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Skills -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <!-- Background image source: https://pixabay.com/illustrations/matrix-code-data-networking-1735640/ -->
+        <section id="skills" class="skills bg-primary">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="text-vertical-center">
+                            <h1>Skills</h1>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="skills-item">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                        <img src='../img/mean.jpg' class="fa fa-stack-1x"><img>
+                                    </span>
+                                    <h4>
+                                        <strong>MEAN</strong>
+                                    </h4>
+                                    <p>
+                                        JavaScript
+                                        <br>ES6
+                                        <br>MongoDB
+                                        <br>ExpressJS
+                                        <br>AngularJS
+                                        <br>NodeJS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6">
+                                <div class="skills-item">
+                                    <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                                    <img src='../img/mean.jpg' class="fa fa-stack-1x"><img>
+                                    <img src='../img/python.jpg' class="fa fa-stack-1x"><img>
                                 </span>
-                                <h4>
-                                    <strong>MEAN</strong>
-                                </h4>
-                                <p>
-                                    JavaScript
-                                    <br>ES6
-                                    <br>MongoDB
-                                    <br>ExpressJS
-                                    <br>AngularJS
-                                    <br>NodeJS
-                                </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                                    <h4>
+                                        <strong>Python</strong>
+                                    </h4>
+                                    <p>
+                                        Python
+                                        <br>Flask
+                                        <br>Django
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                            
+                            <div class="col-md-3 col-sm-6">
+                                <div class="skills-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <img src='../img/cSharp.jpg' class="fa fa-stack-1x"><img>
+                                </span>
+                                    <h4>
+                                        <strong>C#</strong>
+                                    </h4>
+                                    <p>
+                                        C#
+                                        <br>NancyFX
+                                        <br>ASP.NET Core
+                                        <br>Dapper
+                                        <br>Entity Framework
+                                    </p>
+                                </div>
+                            </div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="skills-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                                <img src='../img/python.jpg' class="fa fa-stack-1x"><img>
-                            </span>
-                                <h4>
-                                    <strong>Python</strong>
-                                </h4>
-                                <p>
-                                    Python
-                                    <br>Flask
-                                    <br>Django
-                                </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="skills-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <img src='../img/misc.jpg' class="fa fa-stack-1x"><img>
+                                </span>
+                                    <h4>
+                                        <strong>Other</strong>
+                                    </h4>
+                                    <p>
+                                        HTML
+                                        <br>CSS
+                                        <br>MySQL
+                                        <br>MAMP
+                                        <br>MongoChef
+                                        <br>MySQL Workbench
+                                        <br>Photoshop
+                                        <br>Visual Studio Code
+                                        <br>Sublime
+                                        <br>Atom
+                                        <br>Phaser
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-6">
-                            <div class="skills-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <img src='../img/cSharp.jpg' class="fa fa-stack-1x"><img>
-                            </span>
-                                <h4>
-                                    <strong>C#</strong>
-                                </h4>
-                                <p>
-                                    C#
-                                    <br>NancyFX
-                                    <br>ASP.NET Core
-                                    <br>Dapper
-                                    <br>Entity Framework
-                                </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="skills-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <img src='../img/misc.jpg' class="fa fa-stack-1x"><img>
-                            </span>
-                                <h4>
-                                    <strong>Other</strong>
-                                </h4>
-                                <p>
-                                    HTML
-                                    <br>CSS
-                                    <br>MySQL
-                                    <br>MAMP
-                                    <br>MongoChef
-                                    <br>MySQL Workbench
-                                    <br>Photoshop
-                                    <br>Visual Studio Code
-                                    <br>Sublime
-                                    <br>Atom
-                                    <br>Phaser
-                                </p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="skills-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <img src="../img/java.png" class="fa fa-stack-1x"/>
+                                </span>
+                                    <h4>
+                                        <strong>Java</strong>
+                                    </h4>
+                                    <p>Spring Boot</p>
+                                </div>
                             </div>
                         </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="skills-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <img src="../img/java.png" class="fa fa-stack-1x"/>
-                            </span>
-                                <h4>
-                                    <strong>Java</strong>
-                                </h4>
-                                <p>Spring Boot</p>
-                            </div>
-                        </div>
+        <!-- Contact -->
+        <aside id="contact" class="contact bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3> Kukrim Choe </h3>
+                        <ul class="list-unstyled">
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                            </li>
+                        </ul>
+
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <hr class="small">
+                        <p> Seattle, WA 98115 </p>
+                        <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
+                    </div>
 
                     </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Contact -->
-    <aside id="contact" class="contact bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3> Kukrim Choe </h3>
-                    <ul class="list-unstyled">
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <hr class="small">
-                    <p> Seattle, WA 98115 </p>
-                    <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
-                </div>
-
                 </div>
             </div>
-        </div>
-    </aside>
-
-    <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Scrolls to the selected menu item on the page
-        $(function() {
-            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-        //#to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function() {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function() {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function() {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
-        });
-    </script>
-</body>
+        </aside>
+    </body>
 
 </html>

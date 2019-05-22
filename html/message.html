@@ -19,23 +19,28 @@
     <!-- Custom Fonts -->
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Misc JavaScript for pages -->
+    <script src="../js/theme.js"></script>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" onclick="menuOpen()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" onclick="menuClose()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top">Back to top</a>
-            </li>
-            <li>
                 <a href="../index.html">Home</a>
             </li>
             <li>
-                <!-- <a href="#about">About</a> -->
                 <a href="./about.html">About</a>
             </li>
             <li>
@@ -57,7 +62,7 @@
                 <div class="col-lg-12 text-center">
                     <h1><strong>Message</strong></h1>
                     <div>Please connect with me by sending me below form: </div>
-                    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php">
+                    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
                         <fieldset>
                             <legend><h3>Tell me about you!</h3></legend>
                             First name: <input type="text" name="firstName" placeholder="First Name"><br>
@@ -65,6 +70,7 @@
                             <br>
                             <textarea rows="4" cols="50" name="Message" placeholder="Write me a message"></textarea>
                             <br>
+                            <div>By clicking submit, you will be redirected to check_request page on oregon state server</div>
                             <input type="submit" value="Submit">
                         </fieldset>
                     </form>
@@ -80,98 +86,33 @@
 
         <!-- Contact -->
         <aside id="contact" class="contact bg-primary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-        <!--                     <h3>Contact</h3>
-                            <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                            <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
-                            
-                            <h3> Kukrim Choe </h3>
-                            <ul class="list-unstyled">
-                            </ul>
-                            <br>
-                            <ul class="list-inline">
-                                <li>
-                                    <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                                </li>
-                            </ul>
-        
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3> Kukrim Choe </h3>
+                        <ul class="list-unstyled">
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                            </li>
+                        </ul>
                         <div class="col-lg-10 col-lg-offset-1 text-center">
                             <hr class="small">
                             <p> Seattle, WA 98115 </p>
                             <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
                         </div>
-        
-                        </div>
                     </div>
                 </div>
-            </aside>
-    <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Scrolls to the selected menu item on the page
-        $(function() {
-            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-        //#to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function() {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function() {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function() {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
-        });
-    </script>
+            </div>
+        </aside>
 </body>
 
 </html>
