@@ -1,11 +1,11 @@
 /*!
+ * Template Source:
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
 /* Global Styles */
-
 html,
 body {
     width: 100%;
@@ -57,13 +57,11 @@ body {
 }
 
 /* Custom Horizontal Rule */
-
 hr.small {
     max-width: 100px;
 }
 
 /* Side Menu */
-
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -170,7 +168,6 @@ hr.small {
 }
 
 /* Skills */
-
 .skills {
     padding: 50px 0;
     background: url(../img/matrix\ copy.jpg) no-repeat center center scroll;
@@ -235,6 +232,8 @@ footer {
   right: 5px;
 }
 
+/* Hovering effect */
+/* W3School has been used as source */
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -424,7 +423,6 @@ footer {
 
 .img {
   max-width: 100%;
-  /* max-height: 528px; */
 }
 
 .text-box {

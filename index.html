@@ -12,25 +12,24 @@
 
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
         <!-- Custom CSS -->
         <link href="css/stylish-portfolio.css" rel="stylesheet">
-
         <!-- Custom Fonts -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
-
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
+        <!-- Misc JavaScript for pages -->
+        <script src="js/theme.js"></script>
     </head>
 
     <body>
         <!-- Navigation -->
         <a id="menu-toggle" onclick="menuOpen()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
+        <nav id="sidebar-wrapper" class="active">
             <ul class="sidebar-nav">
                 <a id="menu-close" onclick="menuClose()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
                     <a class="sidebar-brand nav-menu" href="./index.html">Home</a>
@@ -99,9 +98,7 @@
                         <h2>Thank you for visiting</h2>
                     </div>
                 </div>
-                <!-- /.row -->
             </div>
-            <!-- /.container -->
         </section>
 
         <!-- Contact -->
@@ -135,9 +132,9 @@
                 </div>
             </div>
         </aside>
+
+        <!-- Carousel Effect JavaScript -->
+        <script src="js/carousel.js"></script>
     </body>
-    <!-- Carousel Effect JavaScript -->
-    <script src="js/carousel.js"></script>
-    <!-- Misc JavaScript for pages -->
-    <script src="js/theme.js"></script>
+
 </html>
