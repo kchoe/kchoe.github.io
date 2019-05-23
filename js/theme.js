@@ -1,5 +1,6 @@
 
     // Open/Closes the sidebar menu
+menuOpen();
 
     function menuClose(){
         var menu = document.getElementById("sidebar-wrapper");

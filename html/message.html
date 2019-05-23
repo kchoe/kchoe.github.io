@@ -1,118 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <title>Kukrim Choe's Portfolio</title>
 
-    <title>Kukrim Choe's Portfolio</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../css/stylish-portfolio.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="../css/stylish-portfolio.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- Custom Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <!-- jQuery -->
+        <script src="../js/jquery.js"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- Misc JavaScript for pages -->
+        <script src="../js/theme.js"></script>
+    </head>
 
-    <!-- Misc JavaScript for pages -->
-    <script src="../js/theme.js"></script>
-</head>
+    <body>
+        <!-- Navigation -->
+        <a id="menu-toggle" onclick="menuOpen()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" onclick="menuClose()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                    <a class="sidebar-brand nav-menu" href="../index.html">Home</a>
+                    <a class="nav-menu" href="./about.html">About</a>
+                    <a class="nav-menu" href="./skills.html">Skills</a>
+                    <a class="nav-menu" href="./portfolio.html">Projects</a>
+                    <a class="nav-menu" href="./message.html">Message</a>
+            </ul>
+        </nav>
 
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" onclick="menuOpen()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" onclick="menuClose()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="./about.html">About</a>
-            </li>
-            <li>
-                <a href="./skills.html">Skills</a>
-            </li>
-            <li>
-                <a href="./portfolio.html">Projects</a>
-            </li>
-            <li>
-                <a href="./message.html">Message</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Message -->
-    <aside id="Message" class="Message">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1><strong>Message</strong></h1>
-                    <div>Please connect with me by sending me below form: </div>
-                    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
-                        <fieldset>
-                            <legend><h3>Tell me about you!</h3></legend>
-                            First name: <input type="text" name="firstName" placeholder="First Name"><br>
-                            Last name: <input type="text" name="lastName" placeholder="Last Name"><br><br>
-                            <br>
-                            <textarea rows="4" cols="50" name="Message" placeholder="Write me a message"></textarea>
-                            <br>
-                            <div>By clicking submit, you will be redirected to check_request page on oregon state server</div>
-                            <input type="submit" value="Submit">
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div style="text-align: center">
-            *This form is present only to demonstrate post/get requirement for the project. <br> This form is getting submitted to check_request.php on OSU server.
-        </div>
-    </aside>
-
-
-        <!-- Contact -->
-        <aside id="contact" class="contact bg-primary">
+        <!-- Message -->
+        <aside id="Message" class="Message">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h3> Kukrim Choe </h3>
-                        <ul class="list-unstyled">
-                        </ul>
-                        <br>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                            </li>
-                        </ul>
-                        <div class="col-lg-10 col-lg-offset-1 text-center">
-                            <hr class="small">
-                            <p> Seattle, WA 98115 </p>
-                            <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
-                        </div>
+                        <header id="top" class="about-header">
+                            <div class="text-vertical-center">
+                                <h1>Message</h1>
+                            </div>
+                        </header>
+                        <div>Please connect with me by sending me below form: </div>
+                        <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+                            <fieldset>
+                                <legend><h3>Tell me about you!</h3></legend>
+                                First name: <input type="text" name="firstName" placeholder="First Name"><br>
+                                Last name: <input type="text" name="lastName" placeholder="Last Name"><br><br>
+                                <br>
+                                <textarea rows="4" cols="50" name="Message" placeholder="Write me a message"></textarea>
+                                <br>
+                                <div>By clicking submit, you will be redirected to check_request page on oregon state server</div>
+                                <input type="submit" value="Submit">
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
+            <br>
+            <div style="text-align: center">
+                *This form is present only to demonstrate post/get requirement for the project. <br> This form is getting submitted to check_request.php on OSU server.
+            </div>
         </aside>
-</body>
+
+
+            <!-- Contact -->
+            <aside id="contact" class="contact bg-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h3> Kukrim Choe </h3>
+                            <ul class="list-unstyled">
+                            </ul>
+                            <br>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="mailto:choek@oregonstate.edu"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/choekr"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/krchoe"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                                </li>
+                            </ul>
+                            <div class="col-lg-10 col-lg-offset-1 text-center">
+                                <hr class="small">
+                                <p> Seattle, WA 98115 </p>
+                                <p class="text-muted">Copyright &copy; Kukrim Choe 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+    </body>
 
 </html>
